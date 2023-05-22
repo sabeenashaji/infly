@@ -22,7 +22,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1%;
     gap: 2%;
     background-color: blue;
 }
@@ -37,11 +36,10 @@ ul{
 }
 .list1{
     display: flex;
-    gap: 50px;
-    color: white;
-    font-size: 1rem;
     justify-content: center;
-}
+     gap: 50px;
+    color: white;  
+}   
 a{
     text-decoration: none;
 }
@@ -52,7 +50,7 @@ a{
     
 }
 .stick h1,h2{
-    font-size: 70px;
+    font-size: 50px;
 }
 .stick{
     padding-top: 4%;
@@ -79,7 +77,7 @@ a{
     top: 300px;
     right: 1px;
     
-    width: 86%;
+    width: 79%;
     left: 385px;
 }
 .second{
@@ -282,16 +280,42 @@ position: absolute;
 .f-t3 i{
     margin-right: 10px;
 }
-
+/* #mobilemenu{
+    display: none;
+} */
+.l-ul{
+    display: none;
+}
+.list2{
+    display: none;
+}
+.owl-carousel .owl-item img{
+    width: 5% !important;
+}
+.jav{
+    display: none;
+    line-height: 3rem;
+}
+#icon5{
+    position: absolute;
+    background-color: blue;
+    color: white;
+    height: 150pv;
+    width: 350px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    align-items: left;
+    margin-top: 100px;
+    line-height: 2;
+}
 
  
 @media screen and (max-width: 800px ){
    .list1{
     display: none;
     width: 100%;
-   }
-   .stick{
-    
    }
    #spotlight div.d-flex{
     flex-direction: column;
@@ -344,6 +368,9 @@ position: absolute;
     display: flex;
     
    }
+   .em{
+    margin-bottom: 20px;
+   }
 }
      
      
@@ -353,8 +380,8 @@ position: absolute;
     }
     .f-t1 p{
         display: none;
-    }
-    .f-t{
+    } 
+     .f-t{
         display: grid;
     }
 }

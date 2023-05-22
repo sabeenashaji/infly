@@ -15,6 +15,9 @@
     <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl.theme.default.min.css">
+    
 </head>
 <body>
     <header class="container">
@@ -28,26 +31,23 @@
                 <li><a>Contact</a></li>
             </ul>
         </nav>
-        <span class="cart">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </span>
-        <!-- <nav id="mobilemenu">
-            <span>
-                <i class="fa-solid fa-bars"></i>
-            </span>
-            <ul>
+        <nav id="icon5" class="jav">
+            <ul >
                 <li><a>Home</a></li>
                 <li><a>Products</a></li>
                 <li><a>International customer</a></li>
                 <li><a>About</a></li>
                 <li><a>Contact</a></li>
-                <span class="cart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </span>
             </ul>
-        </nav> -->
+        </nav>
+        <nav>
+            <span id="mobile">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </nav>
         
-    </header>   
+        
+    </header> 
         <section id="spotlight" class=" ">    
             <div class="d-flex align-c j-sb">
                 <div class="stick">
@@ -111,23 +111,27 @@
                     <h4 class="v-l">Share Your Experience</h4>
                 </div>
             </div>
-            <div class="stars">
+            <div class="stars owl-carousel">
                 <div class="star1">
-                    <img src="images/Vector-1.png">
-                    <img src="images/Vector-1.png">
-                    <img src="images/Vector-1.png">
-                    <img src="images/Vector-1.png">
-                    <img src="images/Vector-1.png">
+                    <div class="d-flex j-c">
+                        <img src="images/Vector-1.png">
+                        <img src="images/Vector-1.png">
+                        <img src="images/Vector-1.png">
+                        <img src="images/Vector-1.png">
+                        <img src="images/Vector-1.png">
+                    </div>
                     <p>"As someone who is not very design-savvy, I was hesitant to try creating my own graphics. But with the help of these templates, I was able to create professional-looking designs in minutes. Thank you!"<br>
                     </p>
                     <p>-John R</p>
                 </div>
                 <div class="star1">
-                    <img src="images/Vector-1.png">
-                    <img src="images/Vector-1.png">
-                    <img src="images/Vector-1.png">
-                    <img src="images/Vector-1.png">
-                    <img src="images/halfstar.png">
+                    <div class="d-flex j-c">
+                        <img src="images/Vector-1.png">
+                        <img src="images/Vector-1.png">
+                        <img src="images/Vector-1.png">
+                        <img src="images/Vector-1.png">
+                        <img src="images/Vector-1.png">
+                    </div>
                    <p>"I've been using these templates for a few months now, and I can't imagine going back to creating everything from scratch. The quality is top-notch, and the variety of options means I can always find something that fits my needs."<br>
                     </p>
                     <p>-David T</p>
@@ -137,11 +141,13 @@
                 </div>
             </div>
                 <div class="star1">
-                    <img src="images/Vector-1.png">
-                    <img src="images/Vector-1.png">
-                    <img src="images/Vector-1.png">
-                    <img src="images/Vector-1.png">
-                    <img src="images/halfstar.png" alt="">
+                    <div class="d-flex j-c">
+                        <img src="images/Vector-1.png">
+                        <img src="images/Vector-1.png">
+                        <img src="images/Vector-1.png">
+                        <img src="images/Vector-1.png">
+                        <img src="images/Vector-1.png">
+                    </div>
                   <p>"I love how easy it is to customize these templates to fit my brand's aesthetic. The illustrations and graphics are beautiful, and the Photoshop templates are a dream to work with. I highly recommend to anyone looking to up their design game!"<br>
                     </p>
                     <p>-Amanda K</p>
@@ -193,8 +199,27 @@
                </div>
             </div>
         </footer>
-        
-        
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="./owl.carousel.min.js"></script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+        </script>
+        <script src="script.js"></script>
            
         
     
